@@ -19,7 +19,7 @@ const initialState = {
     activeChartIndex: 0,
 };
 
-export default (state = initialState, { type, payload }) => {
+const ChartsReducer = (state = initialState, { type, payload }) => {
     switch (type) {
         case SET_CHARTS_DATA:
             return { ...state, charts: payload };
@@ -33,3 +33,5 @@ export default (state = initialState, { type, payload }) => {
             return state;
     }
 };
+
+export default ChartsReducer;

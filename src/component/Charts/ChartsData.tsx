@@ -20,8 +20,6 @@ const ChartsData: FunctionComponent<ChartsDataProps> = () => {
         newChartsData[index] = Number(value);
 
         dispatch(setActiveChart({ type: activeChart.type, elements: newChartsData }));
-
-        console.log(newChartsData);
     };
 
     const renderTableRows = () => {
